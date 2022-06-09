@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "Link" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "country" TEXT NOT NULL,
+    "productName" TEXT NOT NULL,
+    "lifetime" TEXT NOT NULL,
+    "Sold" BOOLEAN NOT NULL DEFAULT false
+);
