@@ -1,7 +1,7 @@
 
 import { booleanArg, extendType, nonNull, objectType, stringArg, intArg, inputObjectType, enumType, arg,list } from "nexus";
 import { Prisma } from "@prisma/client"
-import { NexusGenObjects } from "../../nexus-typegen";
+// import { NexusGenObjects } from "../../nexus-typegen";
 
 export const Product = objectType({
     name: "Product", // 1 
@@ -22,22 +22,22 @@ export const Product = objectType({
     },
 });
 
-let products: NexusGenObjects["Product"][] = [   // 1
-    {
-        id: 1,
-        country: "china",
-        productName: "Fullstack tutorial for GraphQL",
-        lifetime: "12/02/2022",
-        Sold: false
-    },
-    {
-        id: 2,
-        country: "rwanda",
-        productName: "Fullstack tutorial for GraphQL222",
-        lifetime: "12/02/202222",
-        Sold: false
-    },
-];
+// let products: NexusGenObjects["Product"][] = [   // 1
+//     {
+//         id: 1,
+//         country: "china",
+//         productName: "Fullstack tutorial for GraphQL",
+//         lifetime: "12/02/2022",
+//         Sold: false
+//     },
+//     {
+//         id: 2,
+//         country: "rwanda",
+//         productName: "Fullstack tutorial for GraphQL222",
+//         lifetime: "12/02/202222",
+//         Sold: false
+//     },
+// ];
 
 export const ProductQuery = extendType({  // 2
     type: "Query",
